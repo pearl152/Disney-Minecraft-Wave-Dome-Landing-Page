@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SectionHeader from "./ui/SectionHeader";
 import { singleDayItinerary, threeDayItinerary } from "@/data/itinerary";
+import EditableImage from "./editor/EditableImage";
 
 const typeColors: Record<string, string> = {
   arrival: "bg-[#00B5C5]",
@@ -38,10 +39,23 @@ export default function ItinerarySection() {
         <div className="flex flex-col items-center">
           <SectionHeader
             eyebrow="Sample Itinerary"
-            title="A Day Built Around Wonder"
-            description="Use this sample itinerary as a starting point to plan your family's perfect Aulani visit. Every family is different — feel free to mix, match, and linger wherever the magic finds you."
+            title="A Day Built Around Shared Wonder"
+            description="Use this concierge-style sample itinerary to shape a family day that feels both magical and manageable, then personalize every stop at your own pace."
           />
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 18 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="mt-10 overflow-hidden rounded-3xl border border-[#E8D5A3]/40 shadow-lg"
+        >
+          <EditableImage
+            contentKey="itineraryImage"
+            className="h-52 w-full object-cover sm:h-64"
+          />
+        </motion.div>
 
         {/* Tab switcher */}
         <motion.div

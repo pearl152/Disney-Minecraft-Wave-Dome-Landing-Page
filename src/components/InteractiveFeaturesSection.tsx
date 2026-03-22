@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import SectionHeader from "./ui/SectionHeader";
 import Badge from "./ui/Badge";
 import { features } from "@/data/features";
+import EditableImage from "./editor/EditableImage";
 
 const colorMap: Record<string, string> = {
   ocean: "bg-[#1B6CA8]/10 border-[#1B6CA8]/20 text-[#1B6CA8]",
@@ -27,9 +28,20 @@ export default function InteractiveFeaturesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center">
           <SectionHeader
-            eyebrow="The Features"
-            title="Explore Every Corner of the Dome"
-            description="Twelve immersive zones and interactive features, each crafted to deliver a distinct moment of wonder. From towering lava waterfalls to hidden story alcoves, there's always something new to discover."
+            eyebrow="Immersive Zones"
+            title="Discover Every Chapter of the Dome"
+            description="Each zone is composed like a curated resort moment: playful, scenic, and easy to navigate for families who want both adventure and comfort."
+          />
+        </div>
+
+        <div className="mt-12 grid gap-5 md:grid-cols-2">
+          <EditableImage
+            contentKey="featureGridImage1"
+            className="h-56 w-full rounded-3xl border border-white/70 object-cover shadow-lg md:h-64"
+          />
+          <EditableImage
+            contentKey="featureGridImage2"
+            className="h-56 w-full rounded-3xl border border-white/70 object-cover shadow-lg md:h-64"
           />
         </div>
 
@@ -84,13 +96,13 @@ export default function InteractiveFeaturesSection() {
           className="mt-12 text-center"
         >
           <p className="text-[#0A1628]/60 mb-4">
-            Plan your day around the features your family loves most.
+             Plan your day around the moments your family will remember most.
           </p>
           <a
             href="#itinerary"
             className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#1B6CA8] hover:bg-[#0E4D8B] text-white font-semibold text-sm rounded-xl transition-colors shadow-md"
           >
-            View Sample Itinerary →
+             Plan the Moments They&apos;ll Remember Most →
           </a>
         </motion.div>
       </div>

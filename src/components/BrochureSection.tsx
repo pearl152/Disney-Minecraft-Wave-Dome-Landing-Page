@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import EditableImage from "./editor/EditableImage";
 
 const sections = [
   {
@@ -59,14 +60,14 @@ export default function BrochureSection() {
           className="text-center mb-12"
         >
           <p className="text-sm font-semibold tracking-widest uppercase text-[#1B6CA8] mb-3">
-            Quick Reference
+             Concierge Snapshot
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold text-[#0A1628]">
-            Your At-a-Glance Guide
+             Your Story-Rich Planning Guide
           </h2>
           <p className="mt-3 text-[#0A1628]/60 max-w-xl mx-auto">
-            Everything you need to know, all in one place. Print this page or
-            save it to your phone before your visit.
+             Everything parents need in one polished place. Print this page or
+             save it to your phone to keep planning easy and joyful.
           </p>
           <button
             onClick={handlePrint}
@@ -75,6 +76,19 @@ export default function BrochureSection() {
           >
             🖨️ Print This Page
           </button>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 18 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="mb-8 overflow-hidden rounded-3xl border border-[#E8D5A3]/40 shadow-lg"
+        >
+          <EditableImage
+            contentKey="brochureImage"
+            className="h-56 w-full object-cover sm:h-72"
+          />
         </motion.div>
 
         {/* Brochure layout */}

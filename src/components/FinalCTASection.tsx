@@ -37,8 +37,8 @@ export default function FinalCTASection() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight"
         >
-          Your Family&apos;s Next Great
-          <span className="block text-[#00D4E8]">Adventure Awaits</span>
+           The Next Chapter in Your
+           <span className="block text-[#00D4E8]">Family&apos;s Memory Story</span>
         </motion.h2>
 
         {/* Supporting text */}
@@ -49,10 +49,7 @@ export default function FinalCTASection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-6 text-lg text-white/70 leading-relaxed max-w-2xl mx-auto"
         >
-          The Minecraft Wave Dome at Aulani is more than a water attraction —
-          it&apos;s the centerpiece of a family vacation your children will talk
-          about for years. The waves are waiting. The story is ready to begin.
-          The only thing missing is you.
+           This concept is more than a water attraction — it&apos;s an invitation to laugh together, discover together, and end the day with stories your family will retell for years.
         </motion.p>
 
         {/* CTA buttons */}
@@ -69,7 +66,7 @@ export default function FinalCTASection() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#00B5C5] hover:bg-[#00D4E8] text-white font-bold text-base rounded-xl transition-all shadow-lg shadow-[#00B5C5]/30 hover:shadow-[#00D4E8]/30 hover:-translate-y-0.5"
           >
-            Plan Your Aulani Stay →
+             Start Planning Your Stay →
           </a>
           <a
             href="#brochure"

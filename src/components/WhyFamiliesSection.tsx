@@ -61,9 +61,9 @@ export default function WhyFamiliesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center">
           <SectionHeader
-            eyebrow="Family First"
-            title="Built for Families. Designed for Memories."
-            description="Every design decision — from the depth gradients to the zone layout to the narrative structure — was made with one question in mind: does this bring families closer together?"
+            eyebrow="Family-Centered"
+            title="Plan the Moments They&apos;ll Remember Most"
+            description="Every design decision supports shared discovery, relaxed pacing, and confidence for parents who want vacation days to feel both magical and effortless."
           />
         </div>
 
@@ -126,9 +126,7 @@ export default function WhyFamiliesSection() {
           className="mt-12 text-center max-w-2xl mx-auto"
         >
           <p className="text-lg text-[#0A1628]/70 leading-relaxed">
-            Vacation memories are built in moments of shared wonder. The
-            Minecraft Wave Dome was designed to create as many of those moments
-            as possible — for every member of your family, every time you visit.
+             Vacation memories are built in moments of shared wonder. This concept is crafted to help families feel present with each other — from first splash through evening storytelling.
           </p>
         </motion.div>
       </div>
