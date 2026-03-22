@@ -47,7 +47,7 @@ export default function Navigation() {
           <span className="text-2xl select-none" aria-hidden="true">
             💎
           </span>
-          <span className="font-bold text-white text-sm sm:text-base leading-tight">
+          <span className="font-bold text-white text-sm sm:text-base leading-tight drop-shadow-sm">
             Minecraft{" "}
             <span className="text-[#00D4E8]">Wave Dome</span>
           </span>

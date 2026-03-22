@@ -2,48 +2,49 @@
 
 import { motion } from "framer-motion";
 import SectionHeader from "./ui/SectionHeader";
+import EditableImage from "./editor/EditableImage";
 
 const worldElements = [
   {
     icon: "⛰️",
-    title: "Geometric Cliffs",
+    title: "Luminous Island Cliffs",
     description:
-      "Towering pixel-cut cliff faces define the dome's perimeter, their sharp angular lines forming a dramatic silhouette against the soft interior lighting.",
+      "Layered cliff silhouettes frame the dome in warm cinematic contrast, balancing adventurous texture with elegant resort polish.",
     glow: "#00D4E8",
   },
   {
     icon: "✨",
-    title: "Glowing Cave Textures",
+    title: "Underwater Glow Chambers",
     description:
-      "Deep within the dome's shadowed alcoves, bioluminescent moss and crystal veins cast a gentle, ethereal blue-green glow across the cave walls.",
+      "Ambient light wells and glowing textures add a dreamlike underwater ambience that feels immersive while remaining family-comfortable.",
     glow: "#00D4E8",
   },
   {
     icon: "🟦",
-    title: "Pixel-Styled Surfaces",
+    title: "Imaginative Crafted Surfaces",
     description:
-      "Every walkway, rock face, and architectural element faithfully reflects Minecraft's iconic 16×16 pixel aesthetic — instantly recognizable, beautifully realized.",
+      "Walkways, stonework, and playful geometric architecture bring imaginative worldbuilding to life through a premium editorial lens.",
     glow: "#F6C90E",
   },
   {
     icon: "🏝️",
-    title: "Interactive Shorelines",
+    title: "Interactive Discovery Shorelines",
     description:
-      "The shoreline zones feature hidden pressure panels, sound triggers, and light activations that respond to guests walking and playing in the shallows.",
+      "Family-friendly shoreline cues, lighting reveals, and playful response elements reward exploration without overwhelming younger guests.",
     glow: "#48BB78",
   },
   {
     icon: "🌊",
-    title: "Biome Wave Experiences",
+    title: "Biome-Inspired Wave Journeys",
     description:
-      "Each biome zone generates waves with a character unique to its theme — mesa zones have slow, rolling swells; jungle zones produce quick, playful splashes.",
+      "Each zone carries its own wave personality, from gentle floating rhythm to spirited bursts that invite laughter and repeat visits.",
     glow: "#1B6CA8",
   },
   {
     icon: "🔍",
-    title: "Discoverable Moments",
+    title: "Keepsake Discovery Moments",
     description:
-      "Scattered throughout the dome are 24 hidden story beats — visual, audio, and tactile discoveries that reward curious families who explore off the main path.",
+      "Hidden reveal moments invite families to collect stories together, turning each return visit into a new memory-making chapter.",
     glow: "#F6C90E",
   },
 ];
@@ -59,9 +60,9 @@ export default function StoryWorldSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center">
           <SectionHeader
-            eyebrow="World Design"
-            title="Enter a Newly Generated World"
-            description="The moment you step through the Jungle Misting Grove entrance, you leave the resort behind and enter a living, breathing Minecraft biome — one that has never existed before, generated just for you."
+            eyebrow="Story World"
+            title="Where Family Play Becomes a Story"
+            description="From first footsteps to final splash, each space is staged like a cinematic chapter designed to invite wonder, comfort, and connection."
             light
           />
         </div>
@@ -73,12 +74,21 @@ export default function StoryWorldSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-8 max-w-3xl mx-auto text-center text-base sm:text-lg text-white/60 leading-relaxed"
         >
-          Imagine a coastal biome where pixel-cut cliffs meet a warm Hawaiian
-          lagoon. Where cave crystals cast golden light onto wave-lapped shores.
-          Where every corner hides a story waiting to be uncovered. The
-          Minecraft Wave Dome is not a themed pool — it is an environment you
-          inhabit, explore, and ultimately make your own.
+          Imagine a tropical cove where gentle glow, curated sound, and immersive details guide your family through moments that feel both magical and easy to navigate. This is not simply a water attraction — it is a story-rich environment designed for meaningful shared discovery.
         </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="mt-12 overflow-hidden rounded-3xl border border-white/20 shadow-2xl"
+        >
+          <EditableImage
+            contentKey="storyImage"
+            className="h-64 w-full object-cover opacity-90 md:h-80"
+          />
+        </motion.div>
 
         <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {worldElements.map((element, index) => (
@@ -127,10 +137,10 @@ export default function StoryWorldSection() {
           className="mt-20 text-center"
         >
           <p className="text-2xl sm:text-3xl font-bold text-white/90 italic max-w-3xl mx-auto leading-snug">
-            &ldquo;No two visits feel the same. The world remembers where you&apos;ve been — and surprises you with what you haven&apos;t found yet.&rdquo;
+            &ldquo;No two family days unfold the same way. Each return brings a new moment to discover, a new laugh to share, and a new memory to keep.&rdquo;
           </p>
           <footer className="mt-4 text-[#00D4E8] text-sm font-medium">
-            — Creative Vision, Minecraft Wave Dome Experience Team
+            — Creative Concept Note
           </footer>
         </motion.blockquote>
       </div>

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Badge from "./ui/Badge";
+import EditableImage from "./editor/EditableImage";
 
 const tags = [
   { label: "Family-Friendly", variant: "teal" as const },
@@ -111,7 +112,13 @@ export default function HeroSection() {
       <div className="absolute inset-0 pixel-pattern opacity-60 pointer-events-none" />
 
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0A1628] via-[#0E4D8B]/40 to-[#0A1628] pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0A1628] via-[#0E4D8B]/45 to-[#0A1628] pointer-events-none" />
+      <EditableImage
+        contentKey="heroImage"
+        className="absolute inset-0 h-full w-full object-cover opacity-30 mix-blend-screen pointer-events-none"
+        priority
+      />
+      <div className="sparkle-overlay absolute inset-0 pointer-events-none" />
 
       {/* Radial glow top */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[#00B5C5]/10 rounded-full blur-3xl pointer-events-none" />
@@ -129,7 +136,7 @@ export default function HeroSection() {
             >
               <span className="h-px w-8 bg-[#00D4E8]" />
               <span className="text-[#00D4E8] text-sm font-semibold tracking-widest uppercase">
-                Aulani, A Disney Resort & Spa
+                 Storybook Resort Concept
               </span>
             </motion.div>
 
@@ -140,9 +147,8 @@ export default function HeroSection() {
               transition={{ duration: 0.7, delay: 0.1 }}
               className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight tracking-tight"
             >
-              Step Into a{" "}
-              <span className="text-[#00D4E8]">New World</span>{" "}
-              of Water
+               Step Into a{" "}
+               <span className="text-[#00D4E8]">World of Shared Discovery</span>
             </motion.h1>
 
             {/* Subheadline */}
@@ -152,7 +158,7 @@ export default function HeroSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-4 text-lg sm:text-xl text-[#F6C90E] font-semibold"
             >
-              The Minecraft Wave Dome at Aulani, A Disney Resort & Spa
+               A premium family invitation into tropical wonder
             </motion.p>
 
             {/* Positioning statement */}
@@ -162,8 +168,7 @@ export default function HeroSection() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="mt-4 text-base sm:text-lg text-white/70 leading-relaxed max-w-lg"
             >
-              Where Disney storytelling meets Minecraft worldbuilding — an
-              immersive indoor wave experience built for family memory-making.
+               Where warm island elegance meets imaginative worldbuilding — a cinematic indoor wave experience crafted for meaningful family memory-making.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -177,19 +182,19 @@ export default function HeroSection() {
                 href="#overview"
                 className="inline-flex items-center justify-center px-6 py-3.5 bg-[#00B5C5] hover:bg-[#00D4E8] text-white font-semibold text-sm rounded-xl transition-colors shadow-lg shadow-[#00B5C5]/25"
               >
-                Explore the Experience
+                 Begin the Story
               </a>
               <a
                 href="#itinerary"
                 className="inline-flex items-center justify-center px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white font-semibold text-sm rounded-xl border border-white/20 hover:border-white/40 transition-all"
               >
-                Plan Your Family Stay
+                 Plan the Moments
               </a>
               <a
                 href="#itinerary"
                 className="inline-flex items-center justify-center px-6 py-3.5 bg-[#F6C90E]/10 hover:bg-[#F6C90E]/20 text-[#F6C90E] font-semibold text-sm rounded-xl border border-[#F6C90E]/30 transition-all"
               >
-                View Sample Itinerary
+                 View a Sample Day
               </a>
             </motion.div>
 
@@ -215,7 +220,13 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="lg:flex justify-center"
           >
-            <DomeVisual />
+            <div className="relative">
+              <DomeVisual />
+              <div className="absolute -bottom-4 -left-4 hidden md:block rounded-2xl border border-white/25 bg-white/10 px-4 py-3 backdrop-blur">
+                <p className="text-xs uppercase tracking-[0.2em] text-[#F6C90E] font-semibold">Tonight&apos;s feeling</p>
+                <p className="text-sm font-semibold text-white">Cinematic glow, gentle waves, and shared laughter</p>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>

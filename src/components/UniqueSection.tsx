@@ -7,27 +7,27 @@ const differentiators = [
   {
     number: "01",
     icon: "📖",
-    title: "Narrative Water Architecture",
+    title: "Narrative Resort Water Architecture",
     description:
-      "Most water parks offer thrills. The Minecraft Wave Dome offers chapters. Every zone is a story beat — enter as a tourist, leave as a character in a world you helped bring to life.",
+      "Most water attractions offer thrills. This concept offers chapters. Every zone is staged as a story beat, so families feel like active participants in the adventure.",
     vs: "Standard water parks: disconnected slides and pools with no story thread.",
     color: "ocean",
   },
   {
     number: "02",
     icon: "🎮",
-    title: "A Brand Kids Already Love",
+    title: "A Familiar World Reimagined",
     description:
-      "Minecraft is the best-selling video game of all time, with over 300 million copies sold. The Wave Dome speaks a language every child already understands — and then amplifies it with Disney magic.",
+      "The creative language families already love is reimagined through warm resort storytelling, elevated design detail, and emotionally rich moments of togetherness.",
     vs: "Generic tropical theming: familiar but not personally meaningful.",
     color: "teal",
   },
   {
     number: "03",
     icon: "🏝️",
-    title: "Only at Aulani",
+    title: "A Distinctive Destination Story",
     description:
-      "This experience exists nowhere else on Earth. Not at any other Disney park, not at any other resort. It is an Aulani original — the only place where Minecraft, Disney, and the beauty of Hawaiʻi converge.",
+      "This concept is framed as a destination-defining signature experience: tropical elegance, immersive fantasy worldbuilding, and family-ready planning confidence in one place.",
     vs: "Franchise experiences: replicated at dozens of locations worldwide.",
     color: "gold",
   },
@@ -43,8 +43,8 @@ export default function UniqueSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center">
           <SectionHeader
-            eyebrow="What Makes It Different"
-            title="Not Just a Pool. A Story You Step Into."
+            eyebrow="Signature Difference"
+            title="Not Just a Pool — A Story You Step Into"
             light
           />
         </div>
@@ -103,12 +103,10 @@ export default function UniqueSection() {
           className="mt-20 text-center rounded-2xl bg-gradient-to-r from-[#00B5C5]/20 to-[#1B6CA8]/20 border border-[#00D4E8]/20 p-10"
         >
           <p className="text-2xl sm:text-3xl font-bold text-white leading-snug max-w-2xl mx-auto">
-            The world has water parks. Aulani has a world.
+            The world has water parks. This concept offers a world.
           </p>
           <p className="mt-4 text-white/60 text-base max-w-xl mx-auto">
-            The Minecraft Wave Dome is the only experience of its kind —
-            combining narrative depth, beloved brand identity, and Hawaiian
-            paradise into a single unforgettable destination.
+            Crafted as a premium resort invitation, this experience blends narrative depth, tropical fantasy, and practical family planning into one unforgettable destination.
           </p>
         </motion.div>
       </div>

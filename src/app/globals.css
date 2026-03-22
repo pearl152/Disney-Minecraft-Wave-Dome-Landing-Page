@@ -102,10 +102,26 @@ body {
   animation: glow-pulse 3s ease-in-out infinite;
 }
 
+/* Soft magical sparkle wash */
+@keyframes sparkle-drift {
+  0% { transform: translateY(0px) translateX(0px); opacity: 0.18; }
+  50% { transform: translateY(-8px) translateX(6px); opacity: 0.32; }
+  100% { transform: translateY(0px) translateX(0px); opacity: 0.18; }
+}
+
+.sparkle-overlay {
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(246, 201, 14, 0.22) 0, transparent 20%),
+    radial-gradient(circle at 75% 30%, rgba(0, 212, 232, 0.24) 0, transparent 18%),
+    radial-gradient(circle at 50% 70%, rgba(255, 255, 255, 0.18) 0, transparent 16%);
+  animation: sparkle-drift 9s ease-in-out infinite;
+}
+
 /* Reduced motion overrides */
 @media (prefers-reduced-motion: reduce) {
   .wave-animate,
-  .glow-pulse {
+  .glow-pulse,
+  .sparkle-overlay {
     animation: none;
   }
   html {
